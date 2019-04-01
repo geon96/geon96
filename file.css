@@ -1,0 +1,120 @@
+body{
+    background-color: azure;
+}
+/*1.  Kotak */
+.kotakabu{
+    width: 200px;
+    height: 100px;
+    background: grey;
+    padding: 1%;
+    margin: auto;
+}
+.kotakabu .isi{
+    width: 85%;
+    height: 75%;
+    border-radius: 9%;
+    background: burlywood;
+    padding: 7%;
+    text-align: justify;
+}
+/* Kotak */
+
+/* 2. Segi Delapan */
+  .segidelapan{
+    width: 200px;
+    height: 155px;
+    background: #5688AB;
+    position: relative;
+    margin:0 auto;
+  }
+  .segidelapan .teks{
+      color: white;
+      padding-top: 15%;
+      margin: 10%;
+      text-align: justify;
+  }
+  .segidelapan:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-bottom: 20px solid #5688AB;
+        border-left: 20px solid azure;
+        border-right: 20px solid azure;
+        width: 80%;
+        height: 0;
+    }
+    .segidelapan:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 20px solid #5688AB;
+        border-left: 20px solid azure;
+        border-right: 20px solid azure;
+        width: 80%;
+        height: 0;
+    }
+/* Segi Delapan */
+
+/* 3. Surat */
+.border {
+    width: 300px;
+    height: 150px;
+    margin:0 auto;
+    border: 15px solid transparent;
+    border-image: 20 repeating-linear-gradient(
+        -45deg, red 0, red 1em, transparent 0, transparent 2em,
+        #58a 0, #58a 3em, transparent 0, transparent 4em);
+  }
+  
+  .border .surat {
+    background: white;
+    width: 100%;
+    height: 100%;
+  }
+
+  .border .surat .isisurat{
+    text-align: justify;
+    padding: 25px;
+  }
+/* Surat */
+
+/*4.  Jajargenjang */
+  .jajargenjang{
+      width: 200px;
+      height: 50px;
+      display: inline-block;
+      background: #5688AB;
+      transform: skew(30deg);
+      font-size: 20px;
+      margin: 20px;
+  }
+  .jajargenjang .isijg{
+      margin: 10px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      text-align: center;
+      transform: skew(-30deg);
+  }
+/* Jajargenjang */
+
+/*5.  piechart */
+  .diagram1 {
+    margin:0 auto;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #9ACD32;
+      background-image: linear-gradient
+      (to right, transparent 50%, #655 0);
+  }
+  .diagram1 .diagram2 {
+    content: '';
+    display: block;
+    margin-left: 50%;
+    height: 100%;
+    border-radius: 0 100% 100% 0 / 50%;
+    transform-origin: left;  
+  }
